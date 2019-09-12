@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz 1 - 19.09.12</title>
+  </head>
+  <body>
+    <h1>Week 1 Quiz</h1>
+    <p>Open the web inspector console to test.</p>
+
+    <div>
+        <ul id="results">
+
+        </ol>
+    </div>
+  </body>
+  <script>  
+    function spitOut(content) {
+        const el = document .getElementById('results');
+        el.insertAdjacentHTML('beforeend', `<li>${content}</li>`);
+    }
+
+    const firstName = `Michael`;
+    const lastName = `Fienen`;
+    spitOut(`#1a: ${firstName}`);
+    spitOut(`#1b: ${lastName}`);
+
+    const fullName = `${firstName} ${lastName}`;
+    spitOut(`#2: ${fullName}`);
+
+    const welcomeMessage = `Hi ${fullName}, you're taking a quiz and maybe do okay.`;
+    const logInMessage = `Please Log In`;
+    console.log(welcomeMessage);
+    spitOut(`#3: ${welcomeMessage}`);
+    
+    const a = 7;
+    const b = -3;
+    spitOut(`#4: a = ${a}, b = ${b}`);
+
+    const c = a + b;
+    console.log(a + b);
+    spitOut(`#5: a + b = ${c}`);
+
+    const d = a - b;
+    console.log(a - b);
+    spitOut(`#6: a - b = ${d}`);
+
+    const e = `10` + 10;
+    spitOut(`#7: '10' + 10 = ${e}`);
+
+    let loggedIn = false;
+    spitOut(`#8: loggedIn = ${loggedIn} (boolean)`);
+
+    if (!loggedIn) {
+        console.log(logInMessage);
+        spitOut(`#9: ${logInMessage}`);
+    } 
+
+    loggedIn = true;
+    if (!loggedIn) {
+        console.log(logInMessage);
+        spitOut(`#9: ${logInMessage}`);
+    } else {
+        console.log(welcomeMessage);
+        spitOut(`#10: ${welcomeMessage}`);
+    }
+  </script>
+</html>
