@@ -24,16 +24,15 @@
 
     const firstName = `Michael`;
     const lastName = `Fienen`;
-    spitOut(`#1a: ${firstName}`);
-    spitOut(`#1b: ${lastName}`);
+    spitOut(`#1: firstName = ${firstName}, lastName = ${lastName}`);
 
     const fullName = `${firstName} ${lastName}`;
-    spitOut(`#2: ${fullName}`);
+    spitOut(`#2: fullName = ${fullName}`);
 
     const welcomeMessage = `Hi ${fullName}, you're taking a quiz and maybe do okay.`;
     const logInMessage = `Please Log In`;
     console.log(welcomeMessage);
-    spitOut(`#3: ${welcomeMessage}`);
+    spitOut(`#3: welcomeMassage = ${welcomeMessage}`);
     
     const a = 7;
     const b = -3;
@@ -55,16 +54,16 @@
 
     if (!loggedIn) {
         console.log(logInMessage);
-        spitOut(`#9: ${logInMessage}`);
+        spitOut(`#9: logInMessage = ${logInMessage}`);
     } 
 
     loggedIn = true;
     if (!loggedIn) {
         console.log(logInMessage);
-        spitOut(`#9: ${logInMessage}`);
+        spitOut(`#10: logInMessage = ${logInMessage}`);
     } else {
         console.log(welcomeMessage);
-        spitOut(`#10: ${welcomeMessage}`);
+        spitOut(`#10: welcomeMessage = ${welcomeMessage}`);
     }
   </script>
 </html>
